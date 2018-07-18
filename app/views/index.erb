@@ -1,4 +1,4 @@
 <% @posts.each do |post| %>
-  <h2><%=post.name%></h2>
+  <h2><a href="/posts/<%= post.id%>"><%=post.name%></a></h2>
   <p><%=post.content%></p>
 <% end%>
